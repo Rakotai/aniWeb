@@ -1,0 +1,228 @@
+/* 
+- whatsdev website background color:   background-color:#506573
+
+- Colourful and Balanced : #80C8BC
+- Bright Accent Colors : #2127B3 
+- Cool and Fresh : #5CDB94
+- Contemporary and Bold : #1A1A1C
+- Jaimini's Box Background: #191919
+- Just a vibrant yellow : #FEC156
+- Artsy and Creative ( white / gray ): #F1F0EB
+- Texturized and Dynamic : #2F4455;  
+-  Vivid and Sharp : #332465 ||  #433194; 
+- Clean and Energetic : #9AC4D4
+- Corporate and Traditional : #8DBBB9
+-  Clean and Modern : #DEF2F1 || #3AAFA9
+- random pink : #FFB38F; 
+- random yellow : #FCCD05; 
+- black : #222629;
+- Bright Pink and Pastels : ['A1C3D1', 'B39BC8', 'F0EBF4', 'F172A1', 'E64398']
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dosis|Josefin+Sans|Nunito+Sans|Quicksand|Ubuntu&display=swap');
+
+/* font-family: 'Ubuntu', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Dosis', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Josefin Sans', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/animeBackground_lowOpacity_compressed.png');
+    background-color: #222629;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #222629;
+    overflow-x: hidden;
+    display: block;
+    /* to remove the scrool bar in the x axis */
+}
+
+nav {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #1a1a1c;
+    padding: 20px;
+}
+
+.logo {
+    color: rgb(207, 39, 39);
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+    text-decoration: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: rgb(230, 214, 214);
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.page1-section {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    /* padding: 20% 0% 0% 60%; */
+    position: relative;
+    top: 30%;
+    left: 60%;
+    font-size: 30px;
+    opacity: 0.9;
+}
+
+.next-page {
+    font-family: 'Montserrat';
+    position: relative;
+    top: 93vh;
+    color: wheat;
+}
+
+.ani-To {
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.images {
+    padding-left: 20px;
+    margin: 50px;
+}
+
+/* test */
+
+.card-container {
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.cards {
+    border-radius: 5px;
+    background-color: #121314;
+    padding: 0px 0px 20px 0px;
+    width: 150px;
+}
+
+.cards:hover {
+    box-shadow: 5px 2px 20px black;
+    transition: 0.5s;
+}
+
+.img {
+    width: 100%;
+}
+
+.img img {
+    height: 220px;
+    width: 150px;
+    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.des {
+    padding-left: 30px;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+button {
+    background-color: blue;
+    color: white;
+    display: block;
+    align-items: center;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 255, 0.336);
+    transition: 0.4s;
+}
+
+.container2 {
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.container2 .cards {
+    padding-bottom: 50px;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+}
+
+.container3 .title {
+    font-size: 28px;
+}
+
+.container4 .title {
+    font-size: 28px;
+}
+
+.container4 {
+    margin-right: 30px;
+}
+
+.container4 .cards {
+    padding-bottom: 52px;
+}
+
+/* Images and Texts of stuff so learn the css grid */
+/* Thumbnais ?? if i have videos to watch */
+
+@media screen and (max-width: 768px) {
+    body {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+    }
+}
